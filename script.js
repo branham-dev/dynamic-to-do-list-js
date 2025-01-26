@@ -27,14 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	};
 
-	
-	addTask();
-});
-
-// Event listeners for the add button and the enter key
+	// Event listeners for the add button and the enter key
 	addButton.addEventListener("click", addTask);
 	taskInput.addEventListener("keypress", (e) => {
 		if (e.key === "Enter") {
 			addTask();
 		}
 	});
+	document.addEventListener("DOMContentLoaded", addTask);
+});
